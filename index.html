@@ -251,7 +251,7 @@ function render(){
       <img loading="lazy" src="locandine/${f.file}" alt="Locandina di ${f.titolo}"></div>
       <div class="meta"><div class="ctitle">${f.titolo}</div>
       <div class="cdir">${f.regista}</div>
-      <div class="cyear">N° ${f.n} · ${f.anno} · ${f.durata}</div></div>`;
+      <div class="cyear">${f.anno} · ${f.durata} · <span class="cqref">N° ${f.n}</span></div></div>`;
     grid.append(c);
   });
 }
